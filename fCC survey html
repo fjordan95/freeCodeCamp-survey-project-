@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tutoring Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<h1 id="title">Tutoring Survey</h1>
+<p id="description">Let us know how tutoring can help you.<p>
+  <form id="survey-form">
+    <label id="name-label">Name: <input required type="text" id="name" placeholder="Full name" /></label>
+    <label id="email-label">Email: <input required type="email" id="email" placeholder="Email address" /></label>
+    <label id="number-label">Age: <input id="number" type="number" min="10" max="15" placeholder="Age"/></label>
+    <select id="dropdown" name="dropdown">
+      <option value="">Grade</option>
+      <option value="1">5th</option>
+      <option value="2">6th</option>
+      <option value="3">7th</option>
+      <option value="4">8th</option>
+    </select>
+  <fieldset>
+    <label for="math"><input id="math" type="radio" name="class-choice" class="inline" value="math"/>Math</label>
+    <label for="english"><input id="english" type="radio" name="class-choice" class="inline" value="english"/>English</label>
+    <label for="science"><input id="science" type="radio" name="class-choice" class="inline" value="science"/>Science</label>
+    <label for="social-studies"><input id="social-studies" type="radio" name="class-choice" class="inline" value="social-studies"/>Social Studies</label>
+    <label for="other"><input id="other" type="radio" name="class-choice" class="inline" value="other"/>Other</label>
+    </fieldset>
+    <fieldset>
+      <label for="schedule">Preferred time:</label>
+      <div>
+      <input type="checkbox" id="during-lunch" name="during-lunch" value="during-lunch"/> During lunch
+      </div>
+      <div>
+      <input type="checkbox" id="after-school" name="after-school" value="after-school"/> After school
+      </div>
+      <div>
+      <input type="checkbox" id="study-hall" name="study-hall" value="study-hall"/> Study hall
+      </div>
+    </fieldset>
+    <fieldset>
+    <label for="questions"> Questions for your teacher</label><textarea placeholder="Questions or comments"></textarea>
+    </fieldset>
+    <input type="submit" id="submit" value="submit" />
+  </form>
+  </body>
