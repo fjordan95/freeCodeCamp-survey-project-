@@ -1,0 +1,5 @@
+body {background: #800000}
+h1 {text-align: center; color: gray; }
+p {color: white; }
+label {color: white;}
+* {border-box: 2px gray; margin: 5px; }
